@@ -12,6 +12,7 @@ import random
                                                   ControlSettingName.INSPIRATION_TIME_SEC])
 def test_single_process_simulation(control_setting_name):
     coordinator = get_coordinator(single_process=True, sim_mode=True)
+    coordinator.start()
     t = time.time()
     v = random.randint(10, 100)
     v_min = v - 5
