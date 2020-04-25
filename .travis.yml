@@ -8,7 +8,7 @@ before_install:
   - pip install -U pytest-cov
   - pip install -U coveralls
 install:
-  - pip install .
+  - pip install -e .
 # command to run tests
 script:
   - pytest --cov=vent --cov-report term-missing tests
