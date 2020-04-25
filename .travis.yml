@@ -12,3 +12,5 @@ install:
 # command to run tests
 script:
   - pytest --cov=vent --cov-report term-missing tests
+after_success:
+    - coveralls
